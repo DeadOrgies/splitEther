@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Send Ether</title>
+</head>
+
+<body>
+
+    
+
+    <section>
+        <img src="/resources/1.png" data-speed="2" class="layer" id="eth1">
+        <img src="/resources/2.png" data-speed="7" class="layer" id="eth2">
+        <img src="/resources/3.png" data-speed="2" class="layer" id="polygon">
+        <img src="/resources/4.png" data-speed="-5" class="layer" id="rvn">
+        <img src="/resources/5.png" data-speed="5" class="layer" id="bnc">
+
+        <div data-speed="-1" class="layer">
+        <div class="box">
+            <form class="form1" action="/" method="POST">
+
+                <h2>Split ETH</h2>
+
+                <div class="page">
+
+                    <label class="field field_v3">
+                        <input id="addr1" name="addr1" class="field__input" placeholder="e.g. 0x..." required>
+                        <span class="field__label-wrap">
+                            <span class="field__label">Wallet 1</span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="page">
+
+                    <label class="field field_v3">
+                        <input id="addr2" name="addr2" class="field__input" placeholder="e.g. 0x..." required>
+                        <span class="field__label-wrap">
+                            <span class="field__label">Wallet 2</span>
+                        </span>
+                    </label>
+                </div>
+
+
+                <div class="page">
+
+                    <label class="field field_v3">
+                        <input id="amount" name="amount" class="field__input" placeholder="e.g. 1, 2, 3, etc..."
+                            required>
+                        <span class="field__label-wrap">
+                            <span class="field__label">Amount</span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="page">
+
+                    <label class="field field_v3">
+                        <input id="saddress" name="saddress" class="field__input" placeholder="e.g. 0x..." required>
+                        <span class="field__label-wrap">
+                            <span class="field__label">Sender Address</span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="page">
+
+                    <label class="field field_v3">
+                        <input id="pkey", name="pkey" class="field__input" placeholder="check your wallet for pkey">
+                        <span class="field__label-wrap">
+                            <span class="field__label">Private Key</span>
+                        </span>
+                    </label>
+                </div>
+
+                <button class="btn" type="submit" id="submit" name="sign and submit">click to send ether</button>
+
+            </form>
+        </div>
+        </div>
+    </section>
+
+
+
+    <script src="/scripts/parallax.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
