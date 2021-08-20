@@ -103,34 +103,11 @@ const init = async (res) => {
     }
 
 
-    //deposit();
     await transferEth();
     new transactions({Txhash: txhash}).save();
     res.render('txn', { address1: address1, address2: address2, saddress: saddress, amt: amt, txhash: txhash, gasUsed: gas_used });
 
-    //console.log(web3.eth.getBalance('0xE4047c6E072dA477b626668D831917898CD2CC33'));
-    /*
-        const tx = contract.eth.deposit();
-        const gas = await tx.estimateGas({from: _saddress});
-        const gasPrice = await web3.eth.getGasPrice();
-        const data = tx.encodeABI();
-    
-        const signedtx = await web3.eth.accounts.signedTransaction(
-            {
-                to : contract.options.address,
-                data,
-                gas,
-                gasPrice,
-                chainID: id
-            },
-            _pkey
-        )
-    
-        const receipt = await web3.eth.sendSignedTransaction(signedtx.rawTransaction);
-        console.log(`transaction hash is ${receipt.transactionHash}`);
-    
-    
-    */
+  
 }
 
 const setCurrentData = (req) => {
